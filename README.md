@@ -1,2 +1,2 @@
 # Yemeksepeti Full Stack Bootcamp
-Kodluyoruz &amp; Yemeksepeti Full Stack Bootcamp studies
+This repo includes @yemeksepeti Full Stack Bootcamp studies organized by @Kodluyoruz.
