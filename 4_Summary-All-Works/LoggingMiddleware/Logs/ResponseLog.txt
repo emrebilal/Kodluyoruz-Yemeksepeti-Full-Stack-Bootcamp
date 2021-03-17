@@ -1,0 +1,30 @@
+17.02.2021 15:45:47 | Request Url: https://localhost:44356/api/products
+Status Code: '200', Response Body: '[{"id":1,"productName":"Product_1","price":1100},{"id":2,"productName":"Product_2","price":1200},{"id":3,"productName":"Product_3","price":1300},{"id":4,"productName":"Product_4","price":1400},{"id":5,"productName":"Product_5","price":1500},{"id":6,"productName":"Product_6","price":1600},{"id":7,"productName":"Product_7","price":1700},{"id":8,"productName":"Product_8","price":1800},{"id":9,"productName":"Product_9","price":1900},{"id":10,"productName":"Product_10","price":2000}]',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 15:46:07 | Request Url: https://localhost:44356/api/products/5
+Status Code: '200', Response Body: '{"id":5,"productName":"Product_5","price":1500}',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 15:46:34 | Request Url: https://localhost:44356/api/products
+Status Code: '200', Response Body: '{"id":11,"productName":"Product_11","price":2100}',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 15:47:13 | Request Url: https://localhost:44356/api/products/5
+Status Code: '200', Response Body: '5',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 15:47:20 | Request Url: https://localhost:44356/api/products/5
+Status Code: '204', Response Body: '',  Content Type: ''
+
+17.02.2021 16:30:53 | Request Url: https://localhost:44356/api/products
+Status Code: '200', Response Body: '[{"id":1,"productName":"Product_1","price":1100},{"id":2,"productName":"Product_2","price":1200},{"id":3,"productName":"Product_3","price":1300},{"id":4,"productName":"Product_4","price":1400},{"id":5,"productName":"Product_5","price":1500},{"id":6,"productName":"Product_6","price":1600},{"id":7,"productName":"Product_7","price":1700},{"id":8,"productName":"Product_8","price":1800},{"id":9,"productName":"Product_9","price":1900},{"id":10,"productName":"Product_10","price":2000}]',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 16:30:53 | Request Url: https://localhost:44356/favicon.ico
+Status Code: '404', Response Body: '',  Content Type: ''
+
+17.02.2021 16:31:16 | Request Url: https://localhost:44356/api/products
+Status Code: '200', Response Body: '{"id":11,"productName":"Product_11","price":1500}',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 16:31:23 | Request Url: https://localhost:44356/api/products
+Status Code: '200', Response Body: '[{"id":1,"productName":"Product_1","price":1100},{"id":2,"productName":"Product_2","price":1200},{"id":3,"productName":"Product_3","price":1300},{"id":4,"productName":"Product_4","price":1400},{"id":5,"productName":"Product_5","price":1500},{"id":6,"productName":"Product_6","price":1600},{"id":7,"productName":"Product_7","price":1700},{"id":8,"productName":"Product_8","price":1800},{"id":9,"productName":"Product_9","price":1900},{"id":10,"productName":"Product_10","price":2000},{"id":11,"productName":"Product_11","price":1500}]',  Content Type: 'application/json; charset=utf-8'
+
+17.02.2021 16:31:31 | Request Url: https://localhost:44356/api/products
+Status Code: '200', Response Body: '[{"id":1,"productName":"Product_1","price":1100},{"id":2,"productName":"Product_2","price":1200},{"id":3,"productName":"Product_3","price":1300},{"id":4,"productName":"Product_4","price":1400},{"id":5,"productName":"Product_5","price":1500},{"id":6,"productName":"Product_6","price":1600},{"id":7,"productName":"Product_7","price":1700},{"id":8,"productName":"Product_8","price":1800},{"id":9,"productName":"Product_9","price":1900},{"id":10,"productName":"Product_10","price":2000},{"id":11,"productName":"Product_11","price":1500}]',  Content Type: 'application/json; charset=utf-8'
+

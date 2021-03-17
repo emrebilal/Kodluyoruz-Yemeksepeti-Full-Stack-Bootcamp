@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "ProductName": "Asus Laptop",
+    "ProductCategory": "Notebook",
+    "Price": 8000.0
+  },
+  {
+    "Id": 2,
+    "ProductName": "iPhone 12",
+    "ProductCategory": "Mobile Phone",
+    "Price": 12000.0
+  },
+  {
+    "Id": 3,
+    "ProductName": "Nvidia RTX 3080",
+    "ProductCategory": "Graphics Card",
+    "Price": 10000.0
+  },
+  {
+    "Id": 4,
+    "ProductName": "Nvidia RTX 3090",
+    "ProductCategory": "Graphics Card",
+    "Price": 15000.0
+  },
+  {
+    "Id": 5,
+    "ProductName": "Intel i7",
+    "ProductCategory": "Processor",
+    "Price": 2500.0
+  }
+]

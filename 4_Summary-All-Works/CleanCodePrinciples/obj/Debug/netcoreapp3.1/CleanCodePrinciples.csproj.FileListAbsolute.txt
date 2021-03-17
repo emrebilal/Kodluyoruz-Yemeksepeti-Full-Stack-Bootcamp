@@ -1,0 +1,13 @@
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\bin\Debug\netcoreapp3.1\CleanCodePrinciples.exe
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\bin\Debug\netcoreapp3.1\CleanCodePrinciples.deps.json
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\bin\Debug\netcoreapp3.1\CleanCodePrinciples.runtimeconfig.json
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\bin\Debug\netcoreapp3.1\CleanCodePrinciples.runtimeconfig.dev.json
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\bin\Debug\netcoreapp3.1\CleanCodePrinciples.dll
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\bin\Debug\netcoreapp3.1\CleanCodePrinciples.pdb
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.csprojAssemblyReference.cache
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.AssemblyInfoInputs.cache
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.AssemblyInfo.cs
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.csproj.CoreCompileInputs.cache
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.dll
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.pdb
+C:\Users\Emre\source\repos\BootcampHomework_4\CleanCodePrinciples\obj\Debug\netcoreapp3.1\CleanCodePrinciples.genruntimeconfig.cache

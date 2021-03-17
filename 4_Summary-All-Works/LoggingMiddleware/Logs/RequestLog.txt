@@ -1,0 +1,38 @@
+17.02.2021 15:45:47 | Request Url: https://localhost:44356/api/products
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/api/products', Query String: '', Body: '' UserAgent: Chrome 88.0.4324 (Other/Windows 10)
+
+17.02.2021 15:46:07 | Request Url: https://localhost:44356/api/products/5
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/api/products/5', Query String: '', Body: '' UserAgent: Other (Other/Other)
+
+17.02.2021 15:46:34 | Request Url: https://localhost:44356/api/products
+Request Method: POST, Scheme: https, Host: localhost:44356, Path: '/api/products', Query String: '', Body: '{
+    "id": 11,
+    "productName": "Product_11",
+    "price": 2100
+}' UserAgent: Other (Other/Other)
+
+17.02.2021 15:47:13 | Request Url: https://localhost:44356/api/products/5
+Request Method: DELETE, Scheme: https, Host: localhost:44356, Path: '/api/products/5', Query String: '', Body: '' UserAgent: Other (Other/Other)
+
+17.02.2021 15:47:20 | Request Url: https://localhost:44356/api/products/5
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/api/products/5', Query String: '', Body: '' UserAgent: Other (Other/Other)
+
+17.02.2021 16:30:53 | Request Url: https://localhost:44356/api/products
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/api/products', Query String: '', Body: '' UserAgent: Edge 88.0.705 (Other/Windows 10) - Client Ip: ::1
+
+17.02.2021 16:30:53 | Request Url: https://localhost:44356/favicon.ico
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/favicon.ico', Query String: '', Body: '' UserAgent: Edge 88.0.705 (Other/Windows 10) - Client Ip: ::1
+
+17.02.2021 16:31:16 | Request Url: https://localhost:44356/api/products
+Request Method: POST, Scheme: https, Host: localhost:44356, Path: '/api/products', Query String: '', Body: '{
+    "id": 11,
+    "productName": "Product_11",
+    "price": 1500
+}' UserAgent: Other (Other/Other) - Client Ip: ::1
+
+17.02.2021 16:31:23 | Request Url: https://localhost:44356/api/products
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/api/products', Query String: '', Body: '' UserAgent: Other (Other/Other) - Client Ip: ::1
+
+17.02.2021 16:31:31 | Request Url: https://localhost:44356/api/products
+Request Method: GET, Scheme: https, Host: localhost:44356, Path: '/api/products', Query String: '', Body: '' UserAgent: Edge 88.0.705 (Other/Windows 10) - Client Ip: ::1
+

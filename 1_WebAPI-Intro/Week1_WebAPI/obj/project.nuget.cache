@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wLMuttV5ybBboHLnA2mcFTjBCU74mDxS/JokdlAh09l2e3c08fHCYOzEN0IiaKOiyYhm2HrWmxvxq81Z/TwWvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Emre\\source\\repos\\BootcampHomework_1\\Week1_WebAPI\\Week1_WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Emre\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
