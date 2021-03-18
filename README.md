@@ -1,2 +1,2 @@
-# Kodluyoruz & Yemeksepeti Full Stack Web Development Bootcamp
+# Kodluyoruz & Yemeksepeti Full Stack Bootcamp
 This repo includes [Yemeksepeti](https://www.yemeksepeti.com) Full Stack (.Net, JS&React) Web Development Bootcamp studies organized by [Kodluyoruz](https://www.kodluyoruz.org/).
