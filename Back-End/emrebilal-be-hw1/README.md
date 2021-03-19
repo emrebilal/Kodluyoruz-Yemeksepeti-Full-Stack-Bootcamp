@@ -1,4 +1,4 @@
-## Content:
+## Content
 - Creating an Empty Web API project
 - Web API is the Product API. Creating Get-Post-Put-Delete methods on the Product API
 - Keeping a list of data in-memory without using a database
