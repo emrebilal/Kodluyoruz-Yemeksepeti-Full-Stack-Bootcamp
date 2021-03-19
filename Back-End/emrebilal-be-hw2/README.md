@@ -1,4 +1,4 @@
-## Content:
+## Content
 - Creating a Web API using EF Core In-Memory
 - Using Mapping Extensions Interface and/or Abstract Validation
 - Testing with PostMan
