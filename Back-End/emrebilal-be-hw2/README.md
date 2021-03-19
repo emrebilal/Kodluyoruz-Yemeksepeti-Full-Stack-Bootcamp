@@ -113,5 +113,41 @@ public class Car
 }
 ```
 ## Mapping Extension
-
+Database tables have multi-column structures. The tables here are defined as our model objects. We use this data returned by various queries. But we may not always need all the information returned. For example, out of 30 rotating columns, we sometimes show 4-5 columns on the user side. In this case, we do a map operation between our object we created.  
+**Mapping**, in short, transfer between objects.  
+We create the **"CarDTO"** class under the **"Model"** folder to show our model in the project on the user side. Since there are not many features in our model with this structure, we map same features except Id.
+```c#
+public class CarDTO
+{
+    public string BrandName { get; set; }
+    public int ModelYear { get; set; }
+    public string Color { get; set; }
+    public decimal DailyPrice { get; set; }
+}
+```
+Now we can start writing our own mapping extension. But first, let's talk about Extension methods.  
+**Extension** methods are a structure that allows us to easily extend that type without making any changes on a type. To put it more simply, these extension methods we have defined are inherently static methods we know.  
+We add a new folder named **"Mapping"** under the project root. We create the **"MappingExtension"** class in this folder.
+```c#
+public static class MappingExtension
+{
+    public static List<CarDTO> ToViewModel(this List<Car> cars)
+    {
+        List<CarDTO> resultItems = new List<CarDTO>();
+        foreach (var item in cars)
+        {
+            resultItems.Add(new CarDTO
+            {
+                BrandName = item.BrandName,
+                ModelYear = item.ModelYear,
+                Color = item.Color,
+                DailyPrice = item.DailyPrice
+            });
+        }
+        return resultItems;
+    }
+}
+```
+After making the final arrangements in the project, we can move on to the testing phase.
+## Test with POSTMAN
 
