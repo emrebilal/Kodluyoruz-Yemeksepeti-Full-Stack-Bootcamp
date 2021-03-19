@@ -150,4 +150,27 @@ public static class MappingExtension
 ```
 After making the final arrangements in the project, we can move on to the testing phase.
 ## Test with POSTMAN
+Below is a table of what I can do with HTTP methods:
+|URL|Verb|Action|
+|-|-|-|
+|/rent-a-car|GET|UI page, fetches all data|
+|/api/cars|GET|Fetches all data|
+|/api/cars/{id}|GET|Returns data with Id|
+|/api/cars|POST|Creates new data|
+|/api/cars/{id}|PUT|Updates data with Id|
+|/api/cars/{id}|DELETE|Deletes data with Id|
 
+Yes, now the API is ready to use, we can check how well it works by testing it. We will use Postman application for testing, first we run our application with IIS Express in Visual Studio and then open Postman. As GET, we request the link **http: //localhost:port/api/cars**. (The application runs on a default port or you can customize the port according to your own.)  
+This request needs to be answered with **Status 200**, the reply will be blank because we do not have any data yet.
+
+![3](https://user-images.githubusercontent.com/46905124/111791510-52e33b80-88d4-11eb-9120-cc085cbf10cc.png)
+
+Now let's add some data, this time we will use POST. We do send by selecting raw and JSON in Body field and typing the following JSON data. After making the request, it returns the data we have created and the Id number it automatically gives us.
+
+![4](https://user-images.githubusercontent.com/46905124/111791785-99d13100-88d4-11eb-9e26-9f9dd0888ba3.png)
+
+Now, let's bring our saved data with GET again, this time it will not return empty.
+
+![5](https://user-images.githubusercontent.com/46905124/111791852-b2414b80-88d4-11eb-8911-4a858e237857.png)
+
+Likewise, we can test update and delete operations using PUT, DELETE.
