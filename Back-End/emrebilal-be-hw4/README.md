@@ -23,4 +23,4 @@ The studies here are general repetitions of the subjects.
     - 192.168.1.2 (PersonController)
 7. Understanding API Versioning. Making versions that read version information with QueryString and Header. Accessing methods by version
 8. Token based authentication and Refresh Token usage (JWT)
-9. Creating a "Worker Service" that does a desired work
+9. Creating a "Worker Service" that does a work
