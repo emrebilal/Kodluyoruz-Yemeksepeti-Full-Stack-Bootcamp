@@ -75,6 +75,7 @@ public interface ICarRepository
     void Delete(Car car);
 }
 ```
-
+Under our **"Data"** folder, we create another class named **"InMemoryCarRepository"** to communicate with our in-memory database. We implement it from the "ICarRepository" class. We are now ready to write our methods.  
+[InMemoryCarRepository.cs]().
 
 
