@@ -12,4 +12,7 @@ The studies here are general repetitions of the subjects.
 |8|[JWT and Refresh Token](JWTandRefreshToken)|
 |9|[Worker Service](WorkerService)|
 1. Making an study about Singleton-Transaction-Scoped concepts 
-2. 
+2. Creating a Middleware layer where requests and responses are logged in separate folders
+    - Request  : Request.txt
+    - Response : Response.txt
+3. Researching Clean Code Principles and making examples on Console App
