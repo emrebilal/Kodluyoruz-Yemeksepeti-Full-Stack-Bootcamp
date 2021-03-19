@@ -75,7 +75,43 @@ public interface ICarRepository
     void Delete(Car car);
 }
 ```
-Under our **"Data"** folder, we create another class named **"InMemoryCarRepository"** to communicate with our in-memory database. We implement it from the "ICarRepository" class. We are now ready to write our methods.  
-[InMemoryCarRepository.cs](Back-End/emrebilal-be-hw2/Week2_WebAPI/Data/InMemoryCarRepository.cs)
+Under our **"Data"** folder, we create another class named **"InMemoryCarRepository"** to communicate with our in-memory database. We implement it from the "ICarRepository" class. We are now ready to write our methods.
+
+[InMemoryCarRepository.cs](https://github.com/emrebilal/Kodluyoruz-Yemeksepeti-FullStack-Bootcamp/blob/main/Back-End/emrebilal-be-hw2/Week2_WebAPI/Data/InMemoryCarRepository.cs)
+
+Now let's configure the **"InMemoryDatabase"** link in the **"Startup"** class in the project root.
+```c#
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers();
+    services.AddDbContext<CarsAPIContext>(x => x.UseInMemoryDatabase("RentACar"));
+    services.AddTransient<ICarRepository, InMemoryCarRepository>();
+}
+```
+Now that we have set up the Data layer, we can switch to our Web API controls. Creating a Web API Controller;  
+First of all, if there are files created by default when we first create the project, we delete them. Now we create a class called **"CarsController"** in the **"Controllers"** folder, we derive this class from **Controller**. We can define the controller as the layer that receives and transmits requests from users. We do GET, POST, PUT, DELETE operations here.
+
+[CarsController.cs](https://github.com/emrebilal/Kodluyoruz-Yemeksepeti-FullStack-Bootcamp/blob/main/Back-End/emrebilal-be-hw2/Week2_WebAPI/Controllers/CarsController.cs)
+## Model Validation
+The clients make a request by sending certain parameters to the API we have made, and there is a continuous data exchange. As developers we should never rely on submitted inputs. After passing the parameters sent to the methods through some security steps **"Validation"**, we should continue or discontinue the transactions.  
+By using various attributes in **System.ComponentModel.DataAnnotations** in ASP.NET, we can ensure that appropriate values are entered into models. It will not be enough to just add the validation feature. In addition, verification must be checked within the Controller.  
+In this project, we control it with **ModelState.IsValid** in the method in the Controller, using the default attributes we have defined on the Car model and the attributes we have written as custom. When there is a validation error, we return the message to the client as a response. In addition, in the Controller, we check whether the incoming data is "null" and if it is added with Id (if there is same Id) data.
+```c#
+public class Car
+{
+    public int Id { get; set; }
+    [Required(ErrorMessage = "Brand cannot be blank!")]
+    public string BrandName { get; set; }
+    [Required(ErrorMessage = "Color cannot be blank!")]
+    public string Color { get; set; }
+    [Required(ErrorMessage = "Year cannot be blank!")]
+    [MaxYear(ErrorMessage = "Invalid year!")]
+    public int ModelYear { get; set; }
+    [Required(ErrorMessage = "Price cannot be blank!")]
+    [MinPrice(ErrorMessage = "Price must be equal or greater than 50!")]
+    public decimal DailyPrice { get; set; }
+}
+```
+## Mapping Extension
 
 
