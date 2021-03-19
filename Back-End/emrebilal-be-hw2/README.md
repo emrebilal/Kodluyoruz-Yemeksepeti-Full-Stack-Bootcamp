@@ -25,3 +25,56 @@ RESTful services use HTTP methods GET, POST, PUT, DELETE methods in data exchang
 - **PUT** method type, it is used to update a registered information. It is common to send id information of the record to be updated in the URL. If the URL does not contain id information, all required information is sent from the Body.
 - **DELETE** method type, it is the type of request sent to delete a registered information. It can be sent via Request Body, but usually the process is completed by sending only the id information of the information to be deleted in the URL.
 ## Response Code
+When the HTTP requests are completed, a response comes to us with the response code. These response codes have standard equivalents. By checking the response codes, we can get an idea of whether the request was successful or not. For detailed examination, there may be situations where we need to check the response body.  
+The most commonly used response codes are:
+- 200: OK
+- 201: Created
+- 204: Not Content
+- 400: Bad Request
+- 401: Unauthorized
+- 404: Not Found
+- 409: Conflict
+- 500: Internal Server Error
+- 503: Service Unavailable
+## Creating the Project
+In the Visual Studio environment, we create an ASP.Net Core Web Application project at the stage of creating a new project. After entering our project information, we continue by selecting "API" from the screen that appears.  
+Now we start by creating our model, for this we create a folder named **"Models"** in the root directory of the project and create a class named **"Car"** in it.
+```c#
+public class Car
+{
+    public int Id { get; set; }
+    public string BrandName { get; set; }
+    public string Color { get; set; }
+    public int ModelYear { get; set; }
+    public decimal DailyPrice { get; set; }
+}
+```
+Then we create another folder named **"Data"**, we will use **"EF Core: In-Memory Database"** to save our data. The purpose of this is to do our operations on memory without creating a real database to test the API.  
+We need to adjust the Entity Framework Core, for this we add the **"Microsoft.EntityFrameworkCore.InMemory"** package from the **"NuGet Package Manager"** section.  
+Now, we open another folder called **"Context"** into the **"Data"** folder, create a class called **"CarsAPIContext"** and derive it from **"DbContext"**, we will ensure the communication between our application and our data provider.
+```c#
+public class CarsAPIContext : DbContext
+{
+    public CarsAPIContext(DbContextOptions options) : base(options)
+    {
+
+    }
+    
+    public DbSet<Car> Cars { get; set; }
+}
+```
+We create an **"Abstract"** folder under the **"Data"** folder, create an interface class called **"ICarRepository"** and add our methods.
+```c#
+public interface ICarRepository
+{
+    IEnumerable<Car> GetAll();
+    IEnumerable<CarDTO> GetUI();
+    Car GetById(int id);
+    Car Add(Car car);
+    void Update(Car car);
+    void Delete(Car car);
+}
+```
+
+
+
