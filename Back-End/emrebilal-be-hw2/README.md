@@ -79,7 +79,7 @@ public interface ICarRepository
 ```
 Under our **"Data"** folder, we create another class named **"InMemoryCarRepository"** to communicate with our in-memory database. We implement it from the "ICarRepository" class. We are now ready to write our methods.
 
-[InMemoryCarRepository.cs](https://github.com/emrebilal/Kodluyoruz-Yemeksepeti-FullStack-Bootcamp/blob/main/Back-End/emrebilal-be-hw2/Week2_WebAPI/Data/InMemoryCarRepository.cs)
+[InMemoryCarRepository.cs](Week2_WebAPI/Data/InMemoryCarRepository.cs)
 
 Now let's configure the **"InMemoryDatabase"** link in the **"Startup"** class in the project root.
 ```c#
@@ -93,7 +93,7 @@ public void ConfigureServices(IServiceCollection services)
 Now that we have set up the Data layer, we can switch to our Web API controls. Creating a Web API Controller;  
 First of all, if there are files created by default when we first create the project, we delete them. Now we create a class called **"CarsController"** in the **"Controllers"** folder, we derive this class from **Controller**. We can define the controller as the layer that receives and transmits requests from users. We do GET, POST, PUT, DELETE operations here.
 
-[CarsController.cs](https://github.com/emrebilal/Kodluyoruz-Yemeksepeti-FullStack-Bootcamp/blob/main/Back-End/emrebilal-be-hw2/Week2_WebAPI/Controllers/CarsController.cs)
+[CarsController.cs](Week2_WebAPI/Controllers/CarsController.cs)
 ## Model Validation
 The clients make a request by sending certain parameters to the API we have made, and there is a continuous data exchange. As developers we should never rely on submitted inputs. After passing the parameters sent to the methods through some security steps **"Validation"**, we should continue or discontinue the transactions.  
 By using various attributes in **System.ComponentModel.DataAnnotations** in ASP.NET, we can ensure that appropriate values are entered into models. It will not be enough to just add the validation feature. In addition, verification must be checked within the Controller.  
