@@ -1,6 +1,7 @@
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 const todosUL = document.getElementById("todos");
+const addBtn = document.getElementById("addBtn");
 
 const todos = JSON.parse(localStorage.getItem("todos"));
 //Add if there is data in local
@@ -15,7 +16,13 @@ form.addEventListener("submit", (e) => {
 
     addTodo();
 });
+addBtn.addEventListener("click", (e) => {
+    e.preventDefault();
 
+    addTodo();
+});
+
+//
 function addTodo(todo) {
     let todoText = input.value;
 
@@ -25,19 +32,25 @@ function addTodo(todo) {
 
     if (todoText) {
         const todoElement = document.createElement("li");
+        const deleteBtn = document.createElement("button");
+
         if (todo && todo.completed) {
             todoElement.classList.add("completed");
         }
 
         todoElement.innerText = todoText;
+        deleteBtn.innerText = "Delete";
+        todoElement.appendChild(deleteBtn);
+
         //Left click to done
         todoElement.addEventListener("click", () => {
             todoElement.classList.toggle("completed");
 
             SaveLS();
         });
-        //Right click to delete
-        todoElement.addEventListener("contextmenu", (e) => {
+
+        //Click delete button
+        deleteBtn.addEventListener("click", (e) => {
             e.preventDefault();
 
             todoElement.remove();
